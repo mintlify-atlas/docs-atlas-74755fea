@@ -1,0 +1,108 @@
+{
+  "projectType": "framework",
+  "projectName": "PHP-Gamer",
+  "projectDescription": "A real-time application framework built with PHP 8.1, Swoole, and Laminas for WebSocket-based applications",
+  "theme": "aspen",
+  "primaryColor": "#777BB4",
+  "lightColor": "#8892BF",
+  "darkColor": "#4F5B93",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/websockets",
+              "concepts/modules",
+              "concepts/laminas-integration"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/docker-setup",
+              "guides/configuration",
+              "guides/creating-modules",
+              "guides/authentication"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Development",
+        "groups": [
+          {
+            "group": "WebSocket Development",
+            "pages": [
+              "development/websocket-events",
+              "development/connections",
+              "development/message-handling",
+              "development/client-integration"
+            ]
+          },
+          {
+            "group": "API Development",
+            "pages": [
+              "development/controllers",
+              "development/routing",
+              "development/jwt-authentication",
+              "development/request-response"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "WebSocket API",
+            "pages": [
+              "api/websocket-server",
+              "api/events",
+              "api/connections-manager"
+            ]
+          },
+          {
+            "group": "Core Classes",
+            "pages": [
+              "api/api-controller",
+              "api/control-request",
+              "api/jwt-payload"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "WebSocket server implementation with Swoole",
+    "Laminas MVC framework integration",
+    "JWT-based authentication system",
+    "Modular architecture with PSR-4 autoloading",
+    "Docker containerization with PHP-FPM and Nginx",
+    "Real-time event handling and connection management",
+    "Redis integration for caching and session management"
+  ],
+  "publicApiSurface": [
+    "Application\\Controller\\ApiController",
+    "Application\\WebSocket\\Events\\Open",
+    "Application\\WebSocket\\Events\\Message",
+    "Application\\WebSocket\\Events\\Close",
+    "Application\\WebSocket\\Connections",
+    "Application\\Request\\ControlRequest",
+    "Application\\Jwt\\Payload",
+    "server_ws.php - WebSocket server entry point",
+    "server_http.php - HTTP server entry point"
+  ]
+}
